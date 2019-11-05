@@ -1,0 +1,35 @@
+
+ul li{
+    color: blue;
+}
+
+li > a {
+    text-decoration: none;
+    color:white;
+}
+
+a:hover {
+    color: blue;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+/* .flex-container > div{
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    font-size: 23px;
+} */
+
+.flex-container > a img{
+    margin: 10px;
+    flex: 30%;
+    height: 200px;
+}
