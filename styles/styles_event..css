@@ -1,0 +1,9 @@
+h3{
+    text-align: center;
+}
+
+.flex-col-container{
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}

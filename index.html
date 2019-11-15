@@ -3,6 +3,8 @@
     <head>
         <title>MyPortFolio</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/styles_awards.css">
+        <script type="text/javascript" src="./js/button.js"></script>
     </head>
     <body>
         <div class="container">
@@ -15,14 +17,17 @@
 
             <nav>
                 <ul>
-                    <li>Biography</li>
+                    <!-- <li>Biography</li> -->
+                    <span id="homeBTN" style="color:blue">Biography</span>
                     <span>|</span>
-                    <li><a href="awards.html">Awards</a></li>
+                    <!-- <li><a href="awards.html">Awards</a></li> -->
+                    <!-- <span onclick="myFunction()">Awards</span> -->
+                    <span id="myBTN">Awards</span>
                 </ul>
             </nav>
 
             <section>
-                <div class="content">
+                <div id="test1" class="content">
                 <h3>About me</h3>
                 <p>
                     Bacon ipsum dolor amet sausage andouille shank, 
@@ -33,17 +38,72 @@
                     Pastrami pork filet mignon capicola, tongue ham sausage rump meatloaf leberkas.
                 </p>
                 <h1>DS36</h1>
-                <h1 id="test">MUICT 17</h1>
-                <h1>Microsoft Student Partner : MSPFY 20</h1>
+                <h1 >MUICT 17</h1>
+                <h1>Microsoft Student Partner : MSPFY 20</>
                 <h3 class="te"></h3>
                 </div>
-            </section>
-            
-        </div>
 
+                </div>
+            </section>    
+
+            <!-- Section! -->
+            <div id="test2" class="flex-row-container"> 
+                <div class="flex-col-container">
+                    <div class="flex-in-container">
+                        <a href="event.html">
+                            <img src="Images/Academic_Day_Sized.jpg" alt="academic" style="width:100%">
+                            Events
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="flex-col-container">
+                    <div class="flex-in-container">
+                        <a href="#">
+                            <img src="Images/Certificate.jpg" alt="certificate" style="width:100%">
+                            Certificates
+                        </a>
+                    </div>
+                </div>
+            </div>
         <script>
-            var fac = document.getElementById("test");
-            document.getElementsByClassName("te").innerHTML = "test" + fac.innerHTML;
+            // import {homeBTN, BTN} from 'button.js';
+
+            let count = 0;
+
+            // const homeBTN = document.getElementById("homeBTN");
+            // const BTN = document.getElementById("myBTN");
+            // var fac = document.getElementById("test");
+            // document.getElementsByClassName("te").innerHTML = "test" + fac.innerHTML;
+            // BTN.addEventListener("click", on);
+            // homeBTN.addEventListener("click", out);
+            
+            // function on(){
+            //     // document.getElementById("homeBTN").style.color = "white";
+            //     document.getElementById("test1").style.display = "none";
+            //     document.getElementById("test2").style.visibility = "visible";
+            // }
+
+            // function out(){
+            //     // document.getElementById("homeBTN").style.color = "blue";
+            //     // document.getElementById("BTN").style.color = "white";
+            //     document.getElementById("test1").style.display = "block";
+            //     document.getElementById("test2").style.visibility = "hidden";
+            // }
+
+            function myFunction(){
+                count++;
+                console.log(count);
+                if(count % 2 == 0){
+                    // document.getElementById("test1").style.display = "none";
+                    // document.getElementById("test2").style.display = "block";
+                    document.getElementById("test2").style.visibility = "visible";
+                }else{
+                    document.getElementById("test1").style.display = "block";
+                    // document.getElementById("test2").style.display = "none";
+                    document.getElementById("test2").style.visibility = "hidden";
+                }
+            }
         </script>
     </body>
 </html>
