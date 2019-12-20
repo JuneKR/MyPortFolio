@@ -13,7 +13,13 @@ const BTN = document.getElementById("myBTN");
 
 BTN.addEventListener("click", on);
 homeBTN.addEventListener("click", out);
-            
+homeBTN.addEventListener('mousedown', function(event){
+});
+          
+// if(BTN.style.color == homeBTN.style.color){
+//     homeBTN.style.color = "white";
+// }
+
 function on(){
     // document.getElementById("homeBTN").style.color = "white";
     document.getElementById('test1').style.visibility = "hidden";

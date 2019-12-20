@@ -54,6 +54,9 @@ a:hover {
 span:hover{
     color: blue;
 }
+span:active{
+    color: green;
+}
 
 #test1{
     /* display: block; */
