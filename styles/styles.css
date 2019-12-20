@@ -51,7 +51,27 @@ a:hover {
     color: blue;
 }
 
+span:hover{
+    color: blue;
+}
+span:active{
+    color: green;
+}
+
+#test1{
+    /* display: block; */
+    visibility: visible;
+}
+
+#test2{
+    /* display: none; */
+    /* visibility: hidden; */
+    z-index: -1;
+    position: absolute;
+}
+
 section{
+    /* visibility: visible ; */
     background-color: #000000;
     max-width: 80%;
     height: auto;
@@ -68,9 +88,11 @@ section h3{
 } */
 
 .content{
+    /* visibility: visible; */
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    display: block;
     height: 600px;
 }
 
@@ -83,5 +105,6 @@ section h3{
     padding-top: 5%;
     font-size: 18px;
 }
+
 
 
