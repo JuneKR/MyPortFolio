@@ -99,6 +99,25 @@
   padding: 20px;
 }
 
+.button {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 80px 0 80px 0;
+}
+.button a {
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(2, 207, 60, 0.7803921569);
+}
+.button a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 253, 21, 0.4);
+  background-color: rgba(2, 222, 64, 0.7803921569);
+}
+
 .icon {
   width: 4%;
   padding: 10px;
