@@ -9,7 +9,7 @@
 #head2 {
   font-size: 25px;
   text-align: center;
-  margin: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 #preface {
@@ -18,15 +18,17 @@
   margin-right: auto;
 }
 
-#background {
-  color: white;
-  padding: 20px;
+#information {
+  position: relative;
   max-width: 100%;
-  margin: 50px 0 80px 0;
+  color: white;
+  height: auto;
+  margin: 50px 0 50px 0;
   background-color: #2355FF;
+  padding: 40px 0 40px 0;
 }
-#background p {
-  margin: 20px 0 50px 0;
+#information p {
+  padding: 10px 0 20px 0;
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -87,7 +89,10 @@
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(255, 0, 106, 0.6);
+}
+.card:hover .card-container p {
+  font-size: 21px;
 }
 
 .card-container {
@@ -106,7 +111,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Mitr", sans-serif;
   box-sizing: border-box;
 }
 
@@ -129,18 +134,28 @@ nav li a {
   text-decoration: none;
 }
 
+nav li a:hover {
+  transition: 2s;
+  font-size: 30px;
+}
+
 main {
   font-size: 20px;
   text-align: center;
 }
 
 article {
-  max-width: 50%;
+  max-width: 55%;
   text-align: left;
 }
 
 figure {
   margin: 0 80px 0 80px;
+}
+figure img {
+  width: 80%;
+  height: auto;
+  animation: test 6s 1;
 }
 
 figcaption {
