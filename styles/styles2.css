@@ -34,16 +34,22 @@
   margin-right: auto;
 }
 
-#other {
+#contact {
   color: white;
-  padding: 20px;
+  padding: 20px 0 0 0;
   max-width: 100%;
-  margin: 50px 0 0 0;
+  height: auto;
   background-color: #34363A;
+  font-size: 18px;
 }
-#other p {
-  margin: 20px 0 50px 0;
-  max-width: 30%;
+#contact hr {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contact p {
+  padding: 20px 0 20px 0;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,11 +68,19 @@
   margin: 20px 0 20px 0;
 }
 
-.flex-footer {
+.flex-footer-row {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+.flex-footer-row a {
+  padding: 15px;
+}
+
+.col {
+  flex: 25%;
+  max-width: 25%;
 }
 
 .images img {
@@ -106,24 +120,24 @@
   margin: 80px 0 80px 0;
 }
 .button a {
-  border-radius: 10px;
+  border-radius: 20px;
   color: white;
-  padding: 15px;
+  padding: 15px 45px 15px 45px;
   text-decoration: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(2, 207, 60, 0.7803921569);
+  background-color: #06AD35;
 }
 .button a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 253, 21, 0.4);
-  background-color: rgba(2, 222, 64, 0.7803921569);
+  background-color: #06b738;
 }
 
 .icon {
-  width: 4%;
+  max-width: 80%;
   padding: 10px;
 }
 .icon img {
-  width: 80%;
+  width: 100%;
 }
 
 /* Elements */
