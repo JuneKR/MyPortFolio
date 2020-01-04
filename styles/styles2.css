@@ -132,12 +132,13 @@
   background-color: #06b738;
 }
 
-.icon {
-  max-width: 80%;
-  padding: 10px;
+.pre-image {
+  max-width: 100%;
+  text-align: center;
 }
-.icon img {
-  width: 100%;
+.pre-image img {
+  width: 40%;
+  margin: 0 90px 0 90px;
 }
 
 /* Elements */
@@ -180,15 +181,6 @@ main {
 article {
   max-width: 55%;
   text-align: left;
-}
-
-figure {
-  margin: 0 80px 0 80px;
-}
-figure img {
-  width: 80%;
-  height: auto;
-  animation: test 6s 1;
 }
 
 figcaption {
