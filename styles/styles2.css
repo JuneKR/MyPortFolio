@@ -129,16 +129,18 @@
   margin: 50px 0 80px 0;
 }
 .button a {
-  border-radius: 20px;
-  color: white;
-  padding: 15px 45px 15px 45px;
+  font-size: 18px;
+  border: solid #06AD35;
+  border-radius: 30px;
+  color: #06AD35;
+  padding: 5px 20px 5px 20px;
   text-decoration: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #06AD35;
 }
 .button a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 253, 21, 0.4);
-  background-color: #06b738;
+  color: white;
+  background-color: #06AD35;
 }
 
 .pre-image {
