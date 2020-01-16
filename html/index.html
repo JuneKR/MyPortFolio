@@ -1,72 +1,154 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-        <title>MyPortFolio</title>
-        <link rel="stylesheet" href="../styles/styles.css">
-        <link rel="stylesheet" href="../styles/styles_awards.css">
+        <meta charset="UTF-8">
+        <title>My PortFolio</title>
+        <link rel="stylesheet" href="../styles/styles2.css">
+        <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+        <script src="../js/hover.js"></script>
     </head>
+
     <body>
+
+        <!-- Header -->
         <div class="container">
             <header>
-                <h1>Neptune</h1>
-                <div class="images">
-                    <img src="../Images/IndexPage.jpg" alt="Aek">
+                <div class="images">    
+                    <img src="../Images/notebook-resize-2.jpg" alt="notebook">
                 </div>
+                
+                <!-- Navbar -->
+                <nav>
+                    <ul>
+                        <li><a href="#">NEPTUNE</a></li>
+                    </ul>
+                </nav>
             </header>
 
-            <nav>
-                <ul>
-                    <!-- <li>Biography</li> -->
-                    <span id="homeBTN" style="color:blue">Biography</span>
-                    <span>|</span>
-                    <!-- <li><a href="awards.html">Awards</a></li> -->
-                    <!-- <span onclick="myFunction()">Awards</span> -->
-                    <span id="myBTN">Awards</span>
-                </ul>
-            </nav>
+            <!-- Main Section -->
+            <main>
 
-            <!-- Section! -->
-            <div id="test2" class="flex-row-container"> 
-                <div class="flex-col-container">
-                    <div class="flex-in-container">
-                        <a href="event.html">
-                            <img src="../Images/Academic_Day_Sized.jpg" alt="academic" style="width:100%">
-                            Events
-                        </a>
+                <!-- Preface -->
+                <article id = "preface">
+                    <p id = "head">ทำไมถึงต้องมีเว็ปนี้?</p>
+                    <p>
+                       เว็ปไซต์แห่งนี้เป็นเว็ปไซต์ที่ผมสร้างขึ้นมาเพื่อรวบรวมข้อมูลส่วนตัวของผม
+                       ประกอบด้วย ประวัติส่วนตัว ประวัติการศึกษา ความรู้ความสามาถ ทักษะ 
+                       เกียรติบัตร กิจกรรมที่เคยเข้าร่วม สิ่งที่ผมสนใจเป็นพิเศษและพัฒนาการด้านต่างๆของผม
+                       รวมไปถึง
+                    </p>
+                </article>
+                
+                <!-- Pre - Images -->
+                <div class="pre-image">
+                    <div class="flex-container">
+
+                        <figure class="edu-image">
+                            <a onmouseover="onHover()" onmouseout="outHover()" href="gpa/myGPA.html">
+                                <img id="edu-img" src="../Images/graduate-student-avatar.png" alt="education">
+                                <p id="edu-text">การศึกษาและเกรดเฉลี่ย</p>
+                                <!-- <figcaption>มหาวิทยาลัยมหิดล ศาลายา</figcaption> -->
+                            </a>
+                        </figure>
+
+                        <figure>
+                            <img src="../Images/certificate.png" alt="certificates">
+                            <p>เกียรติบัตรและรางวัลต่างๆ</p>
+                            <!-- <figcaption>เกียรติบัตรและรางวัลต่างๆ</figcaption> -->
+                        </figure>
+
+                        <figure>
+                            <img src="../Images/goal.png" alt="goal">
+                            <p>กิจกรรมที่เคยเข้าร่วม</p>
+                            <p>และพัฒนาการในด้านต่างๆ</p>
+                            <!-- <figcaption>กิจกรรมที่เคยเข้าร่วมและพัฒนาการ</figcaption> -->
+                        </figure>
                     </div>
                 </div>
-    
-                <div class="flex-col-container">
-                    <div class="flex-in-container">
-                        <a href="#">
-                            <img src="../Images/Certificate.jpg" alt="certificate" style="width:100%">
-                            Certificates
-                        </a>
+                
+                <!-- Information -->
+                <article id = "information">
+                    <!-- <img src="../Images/Aekkaluk2.jpg" alt="mypic"> -->
+                    <div>
+                        <p id="head2">ข้อมูลส่วนตัวคร่าวๆ</p>
+                        <p>
+                        ผมมีชื่อว่า นายเอกลักษณ์ ปัญญาเจริญศรี
+                        ชื่อเล่น จูน
+                        ปัจจุบันกำลังศึกษาอยู่ที่ มหาวิทยาลัยมหิดล ศาลายา
+                        คณะเทคโนโลยีสารสนเทศและการสื่อสาร ปีที่ 1
+                        เวลาว่างๆส่วนใหญ่ก็ชอบฝึกเขียนโปรแกรม ฟัง Podcast อ่านหนังสือ
+                        หรือดูการ์ตูน
+                        </p>
                     </div>
-                </div>
-            </div>
+                </article>
 
-            <section id="test1">
-                <div class="content">
-                <h3>About me</h3>
-                <p>
-                    Bacon ipsum dolor amet sausage and ouille shank, 
-                    chicken turkey tail porchetta leberkas short ribs picanha ham meatball.
-                    Ham swine ground round jerky landjaeger ribeye, shank hamburger bresaola pancetta.
-                    Flank boudin bacon pork shank, sausage leberkas chicken doner capicola rump turkey filet mignon.
-                    Swine buffalo tongue rump, beef cow fatback spare ribs bacon boudin venison short ribs.
-                    Pastrami pork filet mignon capicola, tongue ham sausage rump meatloaf leberkas.
-                </p>
-                <h1>DS36</h1>
-                <h1 >MUICT 17</h1>
-                <h1>Microsoft Student Partner : MSPFY 20</>
-                <h3 class="te"></h3>
+                <!-- Card Events -->
+                <section>
+                    <p id = "head2">กิจกรรมที่เคยเข้าร่วม</p>
+                    <div class="flex-container">
+
+                        <div class="card">
+                            <img src="../Images/OpenHouse2.jpg" alt="ms">
+                            <div class="card-container">
+                                <p>
+                                    MUICT OpenHouse 2019
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="../Images/Parliament Hackathon.jpg" alt="parliament">
+                            <div class="card-container">
+                                <p>
+                                    Parliament Hackathon 2019
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="../Images/SparkYourPower.jpg" alt="msp_event">
+                            <div class="card-container">
+                                <p>
+                                    MSP Spark Your Power 2019
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <a href="event/event.html">คลิกดูเพิ่มเติม</a>
+                    </div>
+                    
+                </section>
+
+            <!-- Card Awards -->
+
+            </main>
+
+            <!-- contact -->
+            <footer id = "contact">
+                <p id = "head2">ช่องทางการติดต่อ</p>
+                <p>เบอร์โทรศัพท์ : 0993424684</p>
+                <p>เมลล์ : aekkaluk.pan@student.mahidol.ac.th</p>
+                <!-- <hr> -->
+
+                <div class="flex-footer-row">
+                    <!-- <p class="col">&copy เอกลักษณ์ ปัญญาเจริญศรี</p> -->
+                    <!-- <div class="icon"> -->
+                    
+                    <a href="https://www.facebook.com/profile.php?id=100009493333302" target="_blank"><img style="width:100%" src="../Images/fb.png" alt="fb"></a>
+                    <a href="https://www.instagram.com/junnpcs/?hl=th" target="_blank"><img style="width:100%" src="../Images/ig.png" alt="ig"></a>
+                    <a href="https://www.linkedin.com/in/aekkaluk-panyacharoensri-b1b578189/" target="_blank"><img style="width:100%" src="../Images/in.png" alt="li"></a>
+                    <a href="#my_line_id" target="_blank"><img style="width:100%" src="../Images/li.png" alt="line"></a>
+                        
+                    <!-- </div> -->
                 </div>
 
-                </div>
-            </section>    
-            <span style="background:white;" id="sty">TEST STYLE!</span>
+            </footer>
 
-            <script type="text/javascript" src="../js/button.js"></script>
+        </div>
+
     </body>
+
 </html>

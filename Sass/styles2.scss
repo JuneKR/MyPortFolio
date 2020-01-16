@@ -7,7 +7,7 @@ $colors:(
     green_color: #06AD35,
     card_color: lighten(#FA0061, 20%),
     button_color: lighten(#06AD35, 2%)
-
+    
 );
 
 @function color($color_name){
@@ -189,6 +189,13 @@ $colors:(
     }
 }
 
+.edu-image{
+    a{
+        color:black;
+        text-decoration: none;
+    }
+}
+
 // .col{
 //     padding-bottom: 50%;
 // }
@@ -268,5 +275,5 @@ figcaption{
 }
 
 footer{
-    background-color: color(dark_color);
+    background-color: color(dark_color);;
 }

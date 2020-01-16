@@ -153,6 +153,11 @@
   margin: 0 90px 0 90px;
 }
 
+.edu-image a {
+  color: black;
+  text-decoration: none;
+}
+
 /* Elements */
 * {
   margin: 0;
