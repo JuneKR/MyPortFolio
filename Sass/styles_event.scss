@@ -106,6 +106,10 @@ $colors:(
     color: white;
     margin: 30px 30px 30px 30px;
     background-color: color(card_color);
+    a{
+        color:white;
+        text-decoration: none;
+    }
     img{
         border-radius: 20px;
         width: 100%

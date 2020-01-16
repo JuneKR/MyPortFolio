@@ -86,6 +86,10 @@
   margin: 30px 30px 30px 30px;
   background-color: #ff619e;
 }
+.card a {
+  color: white;
+  text-decoration: none;
+}
 .card img {
   border-radius: 20px;
   width: 100%;
