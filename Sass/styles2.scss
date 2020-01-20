@@ -14,17 +14,6 @@ $colors:(
     @return map-get($colors, $color_name);
 }
 
-@media screen and (max-width:784px){
-    //hide pre-icon
-    .card:nth-child(2){
-        display: none;
-    }
-    .card:nth-child(3){
-        display: none;
-    }
-    
-}
-
 /* ids */
 #head{
     font-size: 25px;
@@ -196,9 +185,12 @@ $colors:(
     }
 }
 
-// .col{
-//     padding-bottom: 50%;
-// }
+.logo{
+    color:white;
+    letter-spacing: 5px;
+}
+
+
 /* Elements */
 
 *{  
@@ -216,7 +208,6 @@ header{
 
 nav{
     background-color: color(pink_color);
-    /* margin-top: 25px; */
     text-align: center;
     font-size: 25px;
     color: white;
@@ -229,14 +220,14 @@ nav{
     }
 }
 
-nav{
-    li{
-        a:hover{
-            transition: 2s;
-            font-size: 30px;
-        }
-    }
-}
+// nav{
+//     li{
+//         a:hover{
+//             transition: 2s;
+//             box-shadow: 0 8px 16px 0 rgba(233, 2, 2, 0.6);
+//         }
+//     }
+// }
 
 main{
     font-size: 20px;
@@ -248,32 +239,20 @@ article{
     text-align: left;
 }
 
-    // @keyframes test{
-    //     from{
-    //         max-width: 60%;
-    //         height: auto;
-    //     }
-    //     to{
-    //         max-width: 100%;
-    //         height: auto;
-    //     }
-
-    // }
-
-// figure{
-//     margin: 0 80px 0 80px;
-//     max-width: 30%;
-//     img{
-//         width: 100%;
-//         height: auto;
-//         animation: test 6s 1;
-//     }
-// }
-
 figcaption{
     margin: 10px 0 10px 0;
 }
 
 footer{
     background-color: color(dark_color);;
+}
+
+@media screen and (max-width:784px){
+    //hide pre-icon
+    .card:nth-child(2){
+        display: none;
+    }
+    .card:nth-child(3){
+        display: none;
+    }
 }

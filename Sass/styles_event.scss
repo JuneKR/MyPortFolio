@@ -88,6 +88,9 @@ $colors:(
     a:hover{
         color: color(blue_color);
     }
+    a.active{
+        color: color(blue_color);
+    }
     //a.active wait for update!
 }
 
@@ -138,6 +141,8 @@ $colors:(
     padding: 20px;
 } 
 
+
+
 *{  
     margin: 0;
     padding: 0;
@@ -166,14 +171,14 @@ nav{
     }
 }
 
-nav{
-    li{
-        a:hover{
-            transition: 2s;
-            font-size: 30px;
-        }
-    }
-}
+// nav{
+//     li{
+//         a:hover{
+//             transition: 2s;
+//             color: #FFFFFF;
+//         }
+//     }
+// }
 
 main{
     font-size: 20px;
@@ -191,4 +196,12 @@ figcaption{
 
 footer{
     background-color: color(dark_color);;
+}
+
+@media screen and (max-width:784px){
+    //hide pre-icon
+    .card{
+        width: 50%;
+    }
+
 }

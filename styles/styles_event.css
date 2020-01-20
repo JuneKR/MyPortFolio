@@ -71,6 +71,9 @@
 .flex-pagination a:hover {
   color: #2355FF;
 }
+.flex-pagination a.active {
+  color: #2355FF;
+}
 
 .images img {
   max-width: 100%;
@@ -132,11 +135,6 @@ nav li a {
   text-decoration: none;
 }
 
-nav li a:hover {
-  transition: 2s;
-  font-size: 30px;
-}
-
 main {
   font-size: 20px;
   text-align: center;
@@ -153,6 +151,12 @@ figcaption {
 
 footer {
   background-color: #252424;
+}
+
+@media screen and (max-width: 784px) {
+  .card {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles_event.css.map */

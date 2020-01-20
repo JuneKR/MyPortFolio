@@ -1,13 +1,4 @@
 /* SASS Map */
-@media screen and (max-width: 784px) {
-  .card:nth-child(2) {
-    display: none;
-  }
-
-  .card:nth-child(3) {
-    display: none;
-  }
-}
 /* ids */
 #head {
   font-size: 25px;
@@ -158,6 +149,11 @@
   text-decoration: none;
 }
 
+.logo {
+  color: white;
+  letter-spacing: 5px;
+}
+
 /* Elements */
 * {
   margin: 0;
@@ -172,7 +168,6 @@ header {
 
 nav {
   background-color: #FA0061;
-  /* margin-top: 25px; */
   text-align: center;
   font-size: 25px;
   color: white;
@@ -183,11 +178,6 @@ nav li {
 nav li a {
   color: white;
   text-decoration: none;
-}
-
-nav li a:hover {
-  transition: 2s;
-  font-size: 30px;
 }
 
 main {
@@ -206,6 +196,16 @@ figcaption {
 
 footer {
   background-color: #252424;
+}
+
+@media screen and (max-width: 784px) {
+  .card:nth-child(2) {
+    display: none;
+  }
+
+  .card:nth-child(3) {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles2.css.map */
