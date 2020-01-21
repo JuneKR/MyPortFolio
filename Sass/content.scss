@@ -1,0 +1,186 @@
+/* SASS Map */
+$colors:(
+    pink_color: #FA0061,
+    blue_color: #2355FF,
+    grey_color: #34363A,
+    dark_color: #252424,
+    green_color: #06AD35,
+    card_color: lighten(#FA0061, 20%),
+    button_color: lighten(#06AD35, 2%)
+    
+);
+
+@function color($color_name){
+    @return map-get($colors, $color_name);
+}
+
+/* ids */
+#head{
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+#head2{
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+
+#contact{
+    color: white;
+    padding: 20px 0 0 0;
+    max-width: 100%;
+    height: auto;
+    // margin: 50px 0 0 0;
+    background-color: color(grey_color);
+    font-size: 18px;
+    hr{ 
+        // max-width:85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{        
+        padding: 20px 0 20px 0;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#content{
+    margin: 50px 0 80px 0;
+    margin-left: auto;
+    margin-right: auto;
+    // border: 10px outset color(card_color);
+    // border-radius: 21px 40px 40px 0px;
+    p{
+        line-height: 45px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        margin: 40px 0 40px 0;
+        border-radius: 20px;
+    }
+}
+
+/* classes */ 
+.container{
+    max-width: 100%;
+    position: relative;
+}
+
+.images{
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.flex-footer-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    a{
+        padding: 15px;
+    }
+}
+
+.logo{
+    color:white;
+    letter-spacing: 5px;
+}
+
+.bg-image{
+    // background-image: url("/Images/OpenHouse2_di.jpg");
+    width: 100%;
+    height: 100%;
+    // filter: blur(0.8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Elements */
+
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: 'Mitr', sans-serif;
+    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    background-color: color(pink_color);
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    background-color: color(pink_color);
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    li{
+        padding: 10px 0 10px 0;
+        a{  
+            color:white;
+            text-decoration: none;
+        }
+    }
+}
+
+// nav{
+//     li{
+//         a:hover{
+//             transition: 2s;
+//             box-shadow: 0 8px 16px 0 rgba(233, 2, 2, 0.6);
+//         }
+//     }
+// }
+
+main{
+    font-size: 20px;
+    text-align: center;
+}
+
+article{
+    max-width: 55%;
+    text-align: left;
+}
+
+figcaption{
+    margin: 10px 0 10px 0;
+}
+
+footer{
+    background-color: color(dark_color);;
+}
+
+@media screen and (max-width:784px){
+    //hide pre-icon
+    .card:nth-child(2){
+        display: none;
+    }
+    .card:nth-child(3){
+        display: none;
+    }
+    #content{
+        font-size: 19px;
+
+        p{
+            line-height: 38px;
+        }
+    }
+}
