@@ -12,7 +12,17 @@ install:
 script:
   - yarn lint
   - yarn build
+
+deploy:
+  provider: firebase
+  token: 
+    secure: "bNOHhet3plf+2vVEosPd9ih31p/YlhDl0wIDpu5aGBUF9n0mXJhZVMBMHLirReRzTuL/Iu4T7BS23bVYnr/pYZq/quwqkdzc1iFXqdRWaOfGa9aZvtgmu2cCcGuluraHskQzYG7JwlaBqDYQhC1BPB4+O00FLys4lrPV4M+sCdXBaX9g2sNJV4Gc9UzPkRByujS744GvLtczJ6UFN0P7Lb+IDeRT1qoX1r0Eu9wyrZvRtHEi50gsw4ubTjpbLCTyxgypJElEwXDsGlu7lG2wipiRM2KBkBDEoFUjwQScCW58IXY/21/8F7YsiBAwyixdCEnLG1yTxYUVaFHklSRuZjTSIt3Vixk5UiSs1vk7ePJ+2PfmnWLm28dHz+Zj4tXvaReMQzgqJkHMCQijpIKttx6+6IxLStwuo3htMcDvlv1V2jdHQChowSTfDOvRECImGeWke5dE7hTY1xL/Jg8b+8ChRPSguUOaDdnQszU+lwHoD6D0S4441YIY1gTsViiSj0k+ytm6jDsaYZ06SHJ3SFCeq7B2ADbnFFyeAxv+ALojN1wzLEqVIY2Gm6uHhLMcsTkMpO1feOR2PifIABCF1FgdUEU/domUwvWyqoTR0PAkNEtRvXmPMiKyE7SgflXv1bSez/VLNlPvzKARDPKgm23Ha9KOUcVZNLgRJHYSv2A="
+  
+    message: "this is an automatic deployment by travis - CI as a result of pushing to master"
+
 after_success:
 - firebase use --token ${FIREBASE_TOKEN} # set firebase token
 - firebase use --add ${PROJECT_ID} # set current project
 - firebase deploy --non-interactive --token "${FIREBASE_TOKEN}" # deploy project
+
+
