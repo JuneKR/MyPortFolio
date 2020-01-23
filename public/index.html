@@ -1,65 +1,159 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.7.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.7.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.7.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.7.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <title>My PortFolio</title>
+        <link rel="stylesheet" href="styles/styles2.css">
+        <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e76080d461.js" crossorigin="anonymous"></script>
+        <!-- <script src="js/hover.js"></script> -->
+    </head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load"> Firebase SDK Loading&hellip;</p>
+    <body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        <!-- Header -->
+        <div class="container">
+            <header>
+                <div class="images">    
+                    <img src="assets/Images/notebook-resize-2.jpg" alt="notebook">
+                </div>
+                
+                <!-- Navbar -->
+                <nav>
+                    <!-- Logo -->
+                    <ul>
+                        <li>
+                            <a href="index.html">NEPTUNE</a>
+                        </li>
+                    </ul>
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+                </nav>
+            </header>
+
+            <!-- Main Section -->
+            <main>
+
+                <!-- Preface -->
+                <article id = "preface">
+                    <p id = "head">ทำไมถึงต้องมีเว็ปนี้?</p>
+                    <p>
+                       เว็ปไซต์แห่งนี้เป็นเว็ปไซต์ที่ผมสร้างขึ้นมาเพื่อรวบรวมข้อมูลส่วนตัวของผม
+                       ประกอบด้วย ประวัติส่วนตัว ประวัติการศึกษา ความรู้ความสามาถ ทักษะ 
+                       เกียรติบัตร กิจกรรมที่เคยเข้าร่วม สิ่งที่ผมสนใจเป็นพิเศษและพัฒนาการด้านต่างๆของผม
+                       รวมไปถึง
+                    </p>
+                </article>
+                
+                <!-- Pre - Images -->
+                <div class="pre-image">
+                    <div class="flex-container">
+
+                        <figure class="edu-image">
+                            <a onmouseover="onHover()" onmouseout="outHover()" href="gpa/myGPA.html">
+                                <img id="edu-img" src="assets/Images/graduate-student-avatar.png" alt="education">
+                                <p id="edu-text">การศึกษาและเกรดเฉลี่ย</p>
+                                <!-- <figcaption>มหาวิทยาลัยมหิดล ศาลายา</figcaption> -->
+                            </a>
+                        </figure>
+
+                        <figure>
+                            <img src="assets/Images/certificate.png" alt="certificates">
+                            <p>เกียรติบัตรและรางวัลต่างๆ</p>
+                            <!-- <figcaption>เกียรติบัตรและรางวัลต่างๆ</figcaption> -->
+                        </figure>
+
+                        <figure>
+                            <img src="assets/Images/goal.png" alt="goal">
+                            <p>กิจกรรมที่เคยเข้าร่วม</p>
+                            <p>และพัฒนาการในด้านต่างๆ</p>
+                            <!-- <figcaption>กิจกรรมที่เคยเข้าร่วมและพัฒนาการ</figcaption> -->
+                        </figure>
+                    </div>
+                </div>
+                
+                <!-- Information -->
+                <article id = "information">
+                    <!-- <img src="../Images/Aekkaluk2.jpg" alt="mypic"> -->
+                    <div>
+                        <p id="head2">ข้อมูลส่วนตัวคร่าวๆ</p>
+                        <p>
+                        ผมมีชื่อว่า นายเอกลักษณ์ ปัญญาเจริญศรี
+                        ชื่อเล่น จูน
+                        ปัจจุบันกำลังศึกษาอยู่ที่ มหาวิทยาลัยมหิดล ศาลายา
+                        คณะเทคโนโลยีสารสนเทศและการสื่อสาร ปีที่ 1
+                        เวลาว่างๆส่วนใหญ่ก็ชอบฝึกเขียนโปรแกรม ฟัง Podcast อ่านหนังสือ
+                        หรือดูการ์ตูน
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Card Events -->
+                <section>
+                    <p id = "head2">กิจกรรมที่เคยเข้าร่วม</p>
+                    <div class="flex-container">
+
+                        <div class="card">
+                            <img src="assets/Images/OpenHouse2.jpg" alt="ms">
+                            <div class="card-container">
+                                <p>
+                                    MUICT OpenHouse 2019
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/Images/Parliament Hackathon.jpg" alt="parliament">
+                            <div class="card-container">
+                                <p>
+                                    Parliament Hackathon 2019
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/Images/SparkYourPower.jpg" alt="msp_event">
+                            <div class="card-container">
+                                <p>
+                                    MSP Spark Your Power 2019
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <a href="events/1.html">คลิกดูเพิ่มเติม</a>
+                    </div>
+                    
+                </section>
+
+            <!-- Card Awards -->
+
+            </main>
+
+            <!-- contact -->
+            <footer id = "contact">
+                <p id = "head2">ช่องทางการติดต่อ</p>
+                <p>เบอร์โทรศัพท์ : 0993424684</p>
+                <p>เมลล์ : aekkaluk.pan@student.mahidol.ac.th</p>
+                <!-- <hr> -->
+
+                <div class="flex-footer-row">
+                    <!-- <p class="col">&copy เอกลักษณ์ ปัญญาเจริญศรี</p> -->
+                    <!-- <div class="icon"> -->
+                    
+                    <a href="https://www.facebook.com/profile.php?id=100009493333302" target="_blank"><img style="width:100%" src="assets/Images/fb.png" alt="fb"></a>
+                    <a href="https://www.instagram.com/junnpcs/?hl=th" target="_blank"><img style="width:100%" src="assets/Images/ig.png" alt="ig"></a>
+                    <a href="https://www.linkedin.com/in/aekkaluk-panyacharoensri-b1b578189/" target="_blank"><img style="width:100%" src="assets/Images/in.png" alt="li"></a>
+                    <a href="https://line.me/ti/p/IB7YjGI3cF" target="_blank"><img style="width:100%" src="assets/Images/li.png" alt="line"></a>
+                        
+                    <!-- </div> -->
+                </div>
+
+            </footer>
+
+        </div>
+
+    </body>
+
 </html>
