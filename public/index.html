@@ -6,8 +6,6 @@
         <title>My PortFolio</title>
         <link rel="stylesheet" href="styles/styles2.css">
         <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/e76080d461.js" crossorigin="anonymous"></script>
-        <!-- <script src="js/hover.js"></script> -->
     </head>
 
     <body>
@@ -49,12 +47,10 @@
                 <div class="pre-image">
                     <div class="flex-container">
 
-                        <figure class="edu-image">
-                            <a onmouseover="onHover()" onmouseout="outHover()" href="gpa/myGPA.html">
-                                <img id="edu-img" src="assets/Images/graduate-student-avatar.png" alt="education">
-                                <p id="edu-text">การศึกษาและเกรดเฉลี่ย</p>
-                                <!-- <figcaption>มหาวิทยาลัยมหิดล ศาลายา</figcaption> -->
-                            </a>
+                        <figure>
+                            <img src="assets/Images/graduate-student-avatar.png" alt="education">
+                            <p>การศึกษาและเกรดเฉลี่ย</p>
+                            <!-- <figcaption>มหาวิทยาลัยมหิดล ศาลายา</figcaption> -->
                         </figure>
 
                         <figure>
@@ -72,6 +68,11 @@
                     </div>
                 </div>
                 
+                <!-- GPA Chart -->
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+
                 <!-- Information -->
                 <article id = "information">
                     <!-- <img src="../Images/Aekkaluk2.jpg" alt="mypic"> -->
@@ -99,6 +100,7 @@
                                 <p>
                                     MUICT OpenHouse 2019
                                 </p>
+
                             </div>
                         </div>
 
@@ -122,7 +124,7 @@
                     </div>
 
                     <div class="button">
-                        <a href="events/1.html">คลิกดูเพิ่มเติม</a>
+                        <a id='test' href="events/1.html">คลิกดูเพิ่มเติม</a>
                     </div>
                     
                 </section>
@@ -155,5 +157,7 @@
         </div>
 
     </body>
-
+    <script src="js/chart.js"></script>
+    <script src="https://kit.fontawesome.com/e76080d461.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 </html>

@@ -13,7 +13,7 @@
 }
 
 #preface {
-  margin: 50px 0 80px 0;
+  margin: 50px 0 50px 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -78,6 +78,14 @@
   padding: 15px;
 }
 
+.chart-container {
+  max-width: 60%;
+  max-height: 60%;
+  margin: 50px 0 80px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .col {
   flex: 25%;
   max-width: 25%;
@@ -137,16 +145,10 @@
 .pre-image {
   max-width: 100%;
   text-align: center;
-  padding-bottom: 50px;
 }
 .pre-image img {
   width: 40%;
   margin: 0 90px 0 90px;
-}
-
-.edu-image a {
-  color: black;
-  text-decoration: none;
 }
 
 .logo {
@@ -190,6 +192,10 @@ article {
   text-align: left;
 }
 
+figure {
+  margin: 12px 0 12px 0;
+}
+
 figcaption {
   margin: 10px 0 10px 0;
 }
@@ -205,6 +211,11 @@ footer {
 
   .card:nth-child(3) {
     display: none;
+  }
+
+  .chart-container {
+    max-width: 90%;
+    max-height: 90%;
   }
 }
 
