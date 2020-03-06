@@ -21,8 +21,6 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
-    "gem": "^2.4.3",
-    "ruby": "^0.6.1",
     "travis": "^0.1.1"
   }
 }
